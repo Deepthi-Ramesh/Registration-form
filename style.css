@@ -77,11 +77,11 @@ form div label{
     left:0;
 } 
 form  div input:focus~label,form  div input:valid~label{
-     top:-12px;
+     top:-21px;
      left:none;
      color:brown;
-     font-size: 0.8rem;
-     font-weight: 600;
+     font-size: 1rem;
+     font-weight: 450;
     }
 form div input:focus,form div input:valid {
     border-bottom:2px solid brown;
@@ -154,7 +154,7 @@ form div input:focus,form div input:valid {
         color:brown;
     }
      form div input:focus,form div input:valid {
-       border-bottom:2px solid brown;
+       border-bottom:2px solid rgb(168, 151, 151);
      }
     .email>label{
         left:0;
