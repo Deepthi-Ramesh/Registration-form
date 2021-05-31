@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{ 
+    font-size:10px;
+    background-color: rgba(50, 243, 130, 0.356);
+    font-family: 'Padauk', sans-serif;
+}
+
+.container {
+    width:40%; 
+    height: 95vh;
+    box-shadow: 2px 2px 2px 2px rgb(192, 190, 190);
+    padding :2.3rem;
+    margin:1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+}
+h2{
+    margin:1rem  auto;
+    color:brown;
+}
+input{
+    background: none;
+    border: none;
+    border-bottom :0.5px solid black;
+    width:80%;
+    padding:0.3rem;
+    outline :none;
+    box-sizing: border-box;
+}
+input[type="radio"]{
+    padding:none;
+}
+
+.gender{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+} 
+.male{
+    display:flex;
+    justify-content: space-between;
+}
+
+.age{
+    width:40%;
+}
+button{
+    width:90%;
+    height:7%;
+    margin:1rem 0 0 0;
+    float:left;
+    background-color: white;
+    color:rgba(7, 7, 7 );
+    padding:0.5rem;
+    
+}
+button:hover{
+    color:white;
+    background-color:brown ;
+    border:none;
+}
+form>div{
+    position:relative;
+}
+form div label{
+    position: absolute;
+    right:26.5rem;
+    pointer-events: none;
+    transition: 0.4s;
+    left:0;
+} 
+form  div input:focus~label,form  div input:valid~label{
+     top:-12px;
+     left:none;
+     color:brown;
+     font-size: 0.8rem;
+     font-weight: 600;
+    }
+form div input:focus,form div input:valid {
+    border-bottom:2px solid brown;
+} 
+@media  (min-width:0px)  and (max-width:675px){
+     body{
+         font-size:18px;
+         width:95vw;
+     }
+     .container{
+         width:90%;
+         flex-direction: column;
+         margin:2rem auto;
+         height:210vh;
+         padding:1.3rem;
+         justify-content: space-around;
+     }
+     input{
+         width:100%;
+     }
+     h2{
+         font-size: 1.3rem;
+     }
+     .flex1{
+         display:flex;
+         flex-direction: row;
+    }
+    
+    .gender{
+         display:flex;
+         flex-direction:column;
+         justify-content:space-between;
+         width:100%;
+     }
+     .male{
+         display:flex;
+         flex-direction: row;
+         align-items: flex-end;
+     }
+    form>div{
+        position:relative;
+    }
+    form div label{
+        position: absolute;
+        right:26.5rem;
+        pointer-events: none;
+        transition: 0.4s;
+        left:0;
+    } 
+     
+    button{
+        width:90%;
+        height:3%;
+        margin:0.5rem 0 0 0;
+        float:left;
+        background-color: white;
+        color:rgba(7, 7, 7 );
+        padding:0.5rem;
+        
+    }
+    button:hover{
+        color:white;
+        background-color:brown ;
+        border:none;
+    }
+    
+    form  div input:focus~label,form  div input:valid~label{
+        top:-18px;
+        left:none;
+        color:brown;
+    }
+     form div input:focus,form div input:valid {
+       border-bottom:2px solid brown;
+     }
+    .email>label{
+        left:0;
+        right:0;
+    }
+    
+
+}
+
+
+
+
+

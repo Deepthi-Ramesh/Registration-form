@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title> Register Form|Html </title>
+        <link rel="stylesheet" type="text/css"  href="style.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+         <script>
+            function validate ()
+            {
+                var x = document.getElementsByName('name');
+                console.log(x)
+                if(x=="")
+                {
+                    alert("name must be filled");
+                    return false;
+                }
+            }
+        </script> 
+    </head>
+    <body>
+        
+            <form class="container"  onsubmit="validate();"name="form" action="action.php" method="POST">
+                <h2>REGISTRATION FORM </h2>
+                <div>
+                <input type="text"  id="search" name="name"  required="" />
+                <label>Name</label>
+                </div>
+                <div class="gender">
+                       <p>Gender</p>
+                       <div class="male">
+                       <input type="radio"  id="male" name="gender" value="male"/><p>Male</p>
+                       <input type="radio" id="female" name="gender" value="Female"/> <p>Female</p>
+                       <input type="radio" id="transgender" name="gender" value="Transgender"/>  <p>Transgender</p>
+                       </div>
+               </div>
+                
+               <div class="age">
+                     <input type="text" name ="age"  onfocus="(this.type='number')"  min="18" max="100"required=" "/>
+                     <label>Age</label>
+              </div>
+        
+              <div>
+                    <input type="text" onfocus="(this.type='date')"  name="dateofbirth"  required=""/>
+                    <label>DOB</label>
+             </div>
+             <div>
+                    <input type="text" name="fathername"  required=""/>
+                    <label>FatherName</label>
+             </div>
+            <div>
+                    <input type="text" name ="mothername" required="" />
+                    <label>MotherName</label>
+             </div>
+            <div  class="email">
+                    <input type="email" name="email"  required=""/>
+                    <label>E-mail</label>
+            </div>  
+            <div>
+                    <input type="text" name="mobileno"  id="phone" size="10"  required=""/>
+                    <label>MobileNo</label>
+            </div>
+            <div>
+                    <input type="text"  name="address"  required=""/>
+                    <label>Address</label>
+             </div>
+                
+            <div>
+                        <input type="text" onfocus="(this.type='number')" name="pincode" min="1" max="6000000" required=""/>
+                        <label id="pin">Pincode</label>
+            </div>
+            <div>
+                        <input type="text" name="city" required=""/>
+                        <label id="city">City</label>
+             </div>
+             <div>
+                        <input type="text" name="state" required=""/>
+                        <label id="state">State</label>
+             </div>
+                
+            <button type="submit" value="submit">submit</button>   
+        </form>
+    
+    </body>
+</html>
